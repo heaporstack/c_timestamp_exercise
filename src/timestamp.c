@@ -11,6 +11,7 @@ static uint8_t integer_length(uint64_t value) {
 }
 
 char *str_time_off(uint64_t ms, int32_t off) {
+    ms += off;
     uint8_t off_pos = off >= 0;
     off = abs(off);
 
